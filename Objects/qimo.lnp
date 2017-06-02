@@ -1,5 +1,8 @@
 --cpu Cortex-M0
 ".\objects\main.o"
+".\objects\lcd1602.o"
+".\objects\key.o"
+".\objects\uart.o"
 ".\objects\startup_lpc11xx.o"
 ".\objects\system_lpc11xx.o"
 --strict --scatter ".\Objects\qimo.sct"

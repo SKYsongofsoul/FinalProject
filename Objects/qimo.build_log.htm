@@ -17,21 +17,50 @@ Library Manager: ArmAr.exe V5.05 update 1 (build 106)
 Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
 CPU DLL:         SARMCM3.DLL V5.14.0.0
 Dialog DLL:      DARMCM1.DLL V1.12.0.0
-Target DLL:      UL2CM3.DLL V1.155.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
 Dialog DLL:      TARMCM1.DLL V1.9.0.0
  
 <h2>Project:</h2>
 C:\Users\user\Desktop\qimo\qimo.uvprojx
-Project File Date:  05/12/2017
+Project File Date:  05/31/2017
 
 <h2>Output:</h2>
 Rebuild target 'Target 1'
 compiling main.c...
+main.c(31): warning:  #223-D: function "sprintf" declared implicitly
+                        sprintf(GcRcvBuf1,"->DisTemperature");
+main.c(40): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+                                        LCD_DisplayStr(0,1,GcRcvBuf2);
+main.c(50): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+                                        else    { LCD_DisplayStr(0,0,GcRcvBuf1);}
+main.c(58): warning:  #223-D: function "sprintf" declared implicitly
+                        sprintf(GcRcvBuf1,"  DisTemperature");
+main.c(69): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+                                        LCD_DisplayStr(0,0,GcRcvBuf1);
+main.c(70): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+                      LCD_DisplayStr(0,1,GcRcvBuf2);
+main.c(80): warning:  #223-D: function "sprintf" declared implicitly
+                        sprintf(GcRcvBuf1,"->Set MIN Temper");
+main.c(91): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+                                        LCD_DisplayStr(0,0,GcRcvBuf1);
+main.c(92): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+                      LCD_DisplayStr(0,1,GcRcvBuf2);
+main.c(98): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+                LCD_DisplayStr(0,0,GcRcvBuf1);
+main.c(99): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+                LCD_DisplayStr(0,1,GcRcvBuf2);
+main.c: 11 warnings, 0 errors
+compiling LCD1602.c...
+compiling Key.c...
+Key.c(122): warning:  #940-D: missing return statement at end of non-void function "KEY_5"
+  }
+Key.c: 1 warning, 0 errors
+compiling UART.c...
 assembling startup_LPC11xx.s...
 compiling system_LPC11xx.c...
 linking...
-Program Size: Code=1356 RO-data=224 RW-data=44 ZI-data=612  
-".\Objects\qimo.axf" - 0 Error(s), 0 Warning(s).
+Program Size: Code=3644 RO-data=224 RW-data=24 ZI-data=640  
+".\Objects\qimo.axf" - 0 Error(s), 12 Warning(s).
 
 <h2>Software Packages used:</h2>
 
